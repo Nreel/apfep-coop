@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>10</LangVersion>
+    <Nullable>disable</Nullable>
+    <AssemblyName>ApfepCoop</AssemblyName>
+    <RootNamespace>ApfepCoop</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MelonLoader"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\net6\MelonLoader.dll</HintPath></Reference>
+    <Reference Include="0Harmony"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\net6\0Harmony.dll</HintPath></Reference>
+    <Reference Include="Il2CppInterop.Runtime"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath></Reference>
+    <Reference Include="Il2CppInterop.HarmonySupport"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\net6\Il2CppInterop.HarmonySupport.dll</HintPath></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath></Reference>
+    <Reference Include="Unity.InputSystem"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\Il2CppAssemblies\Unity.InputSystem.dll</HintPath></Reference>
+    <Reference Include="UnityEngine.UI"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath></Reference>
+    <Reference Include="UnityEngine.UIModule"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath></Reference>
+    <Reference Include="UnityEngine.InputLegacyModule"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\Il2CppAssemblies\UnityEngine.InputLegacyModule.dll</HintPath></Reference>
+    <Reference Include="Unity.TextMeshPro"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\Il2CppAssemblies\Unity.TextMeshPro.dll</HintPath></Reference>
+    <Reference Include="UnityEngine.TextRenderingModule"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\Il2CppAssemblies\UnityEngine.TextRenderingModule.dll</HintPath></Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\Il2CppAssemblies\UnityEngine.TextCoreTextEngineModule.dll</HintPath></Reference>
+    <Reference Include="Il2CppAssembly-CSharp"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\Il2CppAssemblies\Il2CppAssembly-CSharp.dll</HintPath></Reference>
+    <Reference Include="Il2CppCodeBase"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\Il2CppAssemblies\Il2CppCodeBase.dll</HintPath></Reference>
+    <Reference Include="Il2CppCommon"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\Il2CppAssemblies\Il2CppCommon.dll</HintPath></Reference>
+    <Reference Include="Il2Cppcom.rlabrecque.steamworks.net"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\Il2CppAssemblies\Il2Cppcom.rlabrecque.steamworks.net.dll</HintPath></Reference>
+    <Reference Include="Il2Cppmscorlib"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath></Reference>
+    <Reference Include="Il2CppSystem"><HintPath>L:\agent test space\apfep-coop\install\MelonLoader\Il2CppAssemblies\Il2CppSystem.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>
