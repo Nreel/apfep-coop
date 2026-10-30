@@ -65,15 +65,29 @@ missing. Cycle tested: uninstall → install → `tools/qa.ps1` passes on the re
 Host: launch the game normally. In `MelonLoader/Latest.log` look for
 `[apfep] steam lobby ready: room code 765...` — that decimal id is the room code.
 
-Client: set the room code before launching, then start the game:
+Client: `APFEP_JOIN` must be set before the game starts (the mod reads it once at startup). Pick
+one way:
 
-```
-set APFEP_JOIN=765...
-"A Place for Every Potion.exe"
-```
+- **One Command Prompt window** (lasts only for that window):
+  ```bat
+  set APFEP_JOIN=765...
+  cd /d "E:\SteamLibrary\steamapps\common\A Place for Every Potion"
+  "A Place for Every Potion.exe"
+  ```
+- **PowerShell**, same session:
+  ```powershell
+  $env:APFEP_JOIN = "765..."
+  & "E:\SteamLibrary\steamapps\common\A Place for Every Potion\A Place for Every Potion.exe"
+  ```
+- **Permanent for your Windows account** (works with Steam launches; clear it after playing):
+  ```bat
+  setx APFEP_JOIN 765...      :: later: setx APFEP_JOIN ""
+  ```
 
-Both players need the game plus Steam running. The mod has no in-game UI; everything is env
-vars plus the log lines above.
+Steam's launch-options box adds arguments, not env vars, so launching the client through Steam
+without `setx` will not join. Launch it outside Steam instead; Steam still connects (the game
+ships its own Steamworks). Both players need the game plus Steam running. The mod has no in-game
+UI; everything is env vars plus the log lines above.
 
 QA-only mode (one PC, no Steam lobby): host `set APFEP_QA_PORT=24710`, client
 `set APFEP_JOIN=24710`. `APFEP_SMOKE_AUTO=1` makes an instance drive the menu itself (used by
